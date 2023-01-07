@@ -1,0 +1,20 @@
+#ifndef LION_H
+#define LION_H
+
+#include <QObject>
+#include "feline.h"
+#include <QDebug>
+
+class lion : public feline
+{
+    Q_OBJECT
+public:
+    explicit lion(QObject *parent = nullptr);
+
+    void speak();
+
+signals:
+
+};
+
+#endif // LION_H
